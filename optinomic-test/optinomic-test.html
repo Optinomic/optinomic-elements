@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="optinomic-test">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `optinomic-test`
+     * Test Polymer2
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class OptinomicTest extends Polymer.Element {
+      static get is() { return 'optinomic-test'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'optinomic-test'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(OptinomicTest.is, OptinomicTest);
+  </script>
+</dom-module>
